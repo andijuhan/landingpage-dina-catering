@@ -1,4 +1,4 @@
-import { ShoppingCart } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
 
 export default function Navbar() {
    return (
@@ -12,7 +12,7 @@ export default function Navbar() {
                   <li>Testimoni</li>
                </ul>
                <button className='flex items-center gap-2 rounded-full px-4 py-2 bg-yellow-400 text-black font-medium'>
-                  <ShoppingCart size={20} /> Pesan Sekarang
+                  <MessageCircle size={20} /> Hubungi Kami
                </button>
             </div>
          </div>

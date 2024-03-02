@@ -1,4 +1,4 @@
-import { Check } from 'lucide-react';
+import { ShoppingCart } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -16,7 +16,7 @@ export default function ServiceCard({
    url,
 }: ServiceCardProps) {
    return (
-      <div className='bg-stone-900 text-white group hover:bg-stone-800 p-10 flex flex-col items-center justify-center gap-10 rounded-lg ring-4 ring-stone-700 max-w-xs text-center transition-all duration-300'>
+      <div className='bg-white text-stone-950 group shadow-lg hover:bg-stone-800 hover:text-white p-10 flex flex-col items-center justify-center gap-10 rounded-lg ring-2 ring-stone-400 max-w-xs text-center transition-all duration-300'>
          <h3 className='text-2xl font-bold'>{title}</h3>
          <div className='w-[250px] h-[250px] overflow-hidden rounded-full'>
             <Image
@@ -28,13 +28,13 @@ export default function ServiceCard({
             />
          </div>
 
-         <p className='drop-shadow-lg'>{description}</p>
+         <p className='drop-shadow-lg text-lg'>{description}</p>
          <Link
             href={url}
             target='_blank'
-            className='flex gap-2 items-center justify-center py-2 px-4 bg-yellow-400 text-black font-medium rounded-full'
+            className='flex gap-2 border-2 border-yellow-500 font-bold items-center justify-center py-2 px-4 bg-yellow-400 text-black rounded-full'
          >
-            <Check size={20} /> Pesan
+            <ShoppingCart size={20} /> Pesan
          </Link>
       </div>
    );
