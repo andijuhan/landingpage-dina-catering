@@ -15,7 +15,7 @@ export default function Testimonial() {
       <div className='flex items-center justify-center'>
          <div className='flex items-center justify-center gap-5 flex-wrap px-20'>
             {testimonial.map((item, index) => (
-               <div key={index}>
+               <div key={index} className='shadow-xl'>
                   <Image
                      src={item.imgUrl}
                      alt='testimoni'

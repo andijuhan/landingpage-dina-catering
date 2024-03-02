@@ -17,6 +17,7 @@ export default function Home() {
          <WhyChooseUs />
          <Heading text='Testimoni Pelanggan' />
          <Testimonial />
+         <Heading text='Portfolio / Projects' />
       </main>
    );
 }
