@@ -34,7 +34,7 @@ export default function ServiceCard({
          <Link
             href={url}
             target='_blank'
-            className='flex gap-2 border-2 group-hover:scale-105 transition-all duration-300 border-yellow-500 font-bold items-center justify-center py-2 px-5 bg-yellow-400 text-black rounded-full'
+            className='flex gap-2 border-2 group-hover:scale-105 transition-all duration-300 border-yellow-500 font-bold items-center justify-center py-2 px-5 bg-yellow-400 text-black rounded-xl'
          >
             <ShoppingCart size={20} /> Order
          </Link>
