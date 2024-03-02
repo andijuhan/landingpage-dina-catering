@@ -3,9 +3,11 @@ import React from 'react';
 
 export default function AboutUs() {
    return (
-      <div className='flex mx-auto gap-20 items-center justify-between'>
+      <div className='relative flex mx-auto gap-20 items-center justify-between'>
+         <div className='absolute bg-stone-950 rounded-full blur-3xl top-0 left-0 w-[400px] h-[400px] -z-10' />
+         <div className='absolute bg-stone-700 rounded-full blur-3xl top-0 right-0 w-[600px] h-[400px] -z-10' />
          <div className='w-[50%] flex flex-col items-end justify-end'>
-            <div className='flex flex-col gap-4 text-xl text-right max-w-sm leading-loose'>
+            <div className='flex flex-col gap-4 text-xl text-right max-w-[700px] leading-loose bg-white text-stone-900 p-10 -mr-[100px] z-20 shadow-xl'>
                <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas
                   quisquam, corrupti tempora sint consectetur accusamus
@@ -26,7 +28,7 @@ export default function AboutUs() {
                width={500}
                height={500}
                alt='About Us'
-               className='w-[500px] h-[500px] object-cover rounded-full shadow-2xl ring-4 ring-stone-400'
+               className='w-[500px] h-[500px] object-cover'
             />
          </div>
       </div>

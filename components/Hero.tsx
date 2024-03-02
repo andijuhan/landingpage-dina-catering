@@ -4,7 +4,7 @@ import React from 'react';
 export default function Hero() {
    return (
       <div className='relative w-full h-[600px] overflow-hidden mt-[80px]'>
-         <div className='absolute top-0 right-0 z-20 bg-gradient-to-b from-stone-950 w-full h-[200px]' />
+         <div className='absolute top-0 right-0 z-20 bg-gradient-to-b from-stone-950 w-full h-[300px]' />
          <Image
             src='/images/prasmanan.jpg'
             width={800}
@@ -12,7 +12,7 @@ export default function Hero() {
             alt='hero.'
             className='w-full object-cover object-center brightness-50'
          />
-         <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-5xl text-white'>
+         <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-5xl text-white z-40'>
             <h2 className='text-6xl font-bold text-center capitalize drop-shadow-xl leading-tight'>
                Tingkatkan momen istimewa Anda dengan{' '}
                <span className='bg-yellow-500 shadow-lg p-1 text-black'>

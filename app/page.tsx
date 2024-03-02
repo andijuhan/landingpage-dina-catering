@@ -13,9 +13,10 @@ export default function Home() {
          <Services />
          <Heading text='Tentang Kami' />
          <AboutUs />
-         <Heading text='Mengapa Memilih Kami' />
+         <Heading text='Mengapa Memilih Kami?' />
          <WhyChooseUs />
          <Heading text='Testimoni Pelanggan' />
+         <Testimonial />
       </main>
    );
 }

@@ -11,7 +11,7 @@ export default function Navbar() {
                   <li>Layanan</li>
                   <li>Testimoni</li>
                </ul>
-               <button className='flex items-center gap-2 rounded-full px-4 py-2 bg-yellow-400 text-black font-medium'>
+               <button className='flex items-center gap-2 rounded-full px-4 py-2 bg-white hover:bg-yellow-400 transition-all duration-300 text-black font-bold'>
                   <MessageCircle size={20} /> Hubungi Kami
                </button>
             </div>
