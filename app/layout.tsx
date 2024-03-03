@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
    return (
       <html lang='en'>
-         <body className='font-primaryFont bg-stone-900 text-white'>
+         <body className='font-primaryFont bg-gradient-to-b from-stone-900 to-stone-800 text-white'>
             <Navbar />
             {children}
             <Footer />

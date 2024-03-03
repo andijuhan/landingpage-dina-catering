@@ -1,4 +1,4 @@
-import { ShoppingCart } from 'lucide-react';
+import { ShoppingCart, ThumbsUp } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -7,6 +7,7 @@ interface ServiceCardProps {
    image: string;
    description: string;
    url: string;
+   isBestSeller?: boolean;
 }
 
 export default function ServiceCard({
@@ -14,9 +15,16 @@ export default function ServiceCard({
    image,
    description,
    url,
+   isBestSeller,
 }: ServiceCardProps) {
    return (
-      <div className='bg-gray-50 rounded-xl hover:bg-white text-stone-950 group hover:shadow-lg p-7 md:p-10 flex flex-col items-center justify-center gap-5 ring-4 ring-stone-400 max-w-xs text-center transition-all duration-300'>
+      <div className='relative bg-gray-50 rounded-xl hover:bg-white text-stone-950 group hover:shadow-lg p-7 md:p-10 flex flex-col items-center justify-center gap-5 ring-4 ring-stone-400 max-w-xs text-center transition-all duration-300'>
+         {isBestSeller && (
+            <div className='absolute flex items-center justify-center gap-2 -top-5 -right-3 lg:-right-5 z-20 bg-green-600 rounded-xl px-3 py-2 text-white font-medium'>
+               <p>Best Seller</p>
+               <ThumbsUp size={20} className='mb-2' />
+            </div>
+         )}
          <h3 className='text-2xl font-medium'>{title}</h3>
          <div className='w-[250px] h-[250px] overflow-hidden rounded-full'>
             <Image
