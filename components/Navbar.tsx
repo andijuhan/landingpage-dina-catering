@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
    return (
-      <nav className='bg-stone-950 fixed left-0 top-0 z-50 w-full text-white px-5 lg:px-0 py-[20px] shadow-xl'>
+      <nav className='bg-stone-950 fixed left-0 top-0 z-50 w-full text-white px-5 lg:px-0 py-[20px] shadow-xl opacity-90 backdrop-blur-lg'>
          <div className='flex items-center justify-between max-w-7xl mx-auto'>
             <div className='text-lg md:text-2xl font-bold'>DinaCatering</div>
             <div className='flex gap-10 items-center justify-center'>

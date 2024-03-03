@@ -13,14 +13,14 @@ export default function CtaBottom() {
          />
          <div className='absolute top-0 left-0 w-full h-[400px] z-20 flex items-center justify-center'>
             <div className='max-w-7xl flex flex-col items-center justify-between gap-10 text-center px-7 lg:px-0'>
-               <h2 className='text-2xl md:text-4xl lg:text-5xl font-bold text-white md:leading-snug lg:leading-snug drop-shadow-xl'>
+               <h2 className='text-2xl md:text-4xl lg:text-5xl font-bold text-stone-100 md:leading-snug lg:leading-snug drop-shadow-3xl'>
                   Buat Acara Anda Lebih Berkesan dengan Menu Khusus dari
                   Catering Kami
                </h2>
                <Link
                   href='https://wa.me/#'
                   target='_blank'
-                  className='py-4 px-6 bg-stone-200 hover:bg-slate-50 transition-all duration-300 rounded-full text-stone-900 text-xl md:text-2xl lg:text-3xl font-bold'
+                  className='py-4 px-6 bg-stone-100 hover:scale-105 transition-all duration-300 rounded-full text-stone-900 text-xl md:text-2xl lg:text-3xl font-medium'
                >
                   Pesan Sekarang
                </Link>
