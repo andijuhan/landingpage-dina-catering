@@ -16,8 +16,8 @@ export default function ServiceCard({
    url,
 }: ServiceCardProps) {
    return (
-      <div className='bg-gray-50 hover:bg-white text-stone-950 group hover:shadow-lg p-10 flex flex-col items-center justify-center gap-10 ring-2 ring-stone-400 max-w-xs text-center transition-all duration-300'>
-         <h3 className='text-2xl font-bold'>{title}</h3>
+      <div className='bg-gray-50 rounded-xl hover:bg-white text-stone-950 group hover:shadow-lg p-7 md:p-10 flex flex-col items-center justify-center gap-5 ring-4 ring-stone-400 max-w-xs text-center transition-all duration-300'>
+         <h3 className='text-2xl font-medium'>{title}</h3>
          <div className='w-[250px] h-[250px] overflow-hidden rounded-full'>
             <Image
                src={image}
@@ -34,7 +34,7 @@ export default function ServiceCard({
          <Link
             href={url}
             target='_blank'
-            className='flex gap-2 border-2 group-hover:scale-105 transition-all duration-300 border-yellow-500 font-bold items-center justify-center py-2 px-5 bg-yellow-400 text-black rounded-xl'
+            className='flex gap-2 border-2 group-hover:scale-105 transition-all duration-300 border-yellow-500 items-center justify-center py-2 px-10 bg-yellow-400 text-black rounded-full'
          >
             <ShoppingCart size={20} /> Order
          </Link>

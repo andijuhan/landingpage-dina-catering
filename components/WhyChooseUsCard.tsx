@@ -12,9 +12,9 @@ export default function WhyChooseUsCard({
    description,
 }: WhyChooseUsCardProps) {
    return (
-      <div className='flex flex-col gap-5 items-center justify-center text-stone-100 text-center max-w-sm'>
+      <div className='flex flex-col px-5 md:px-0 gap-5 items-center justify-center text-stone-100 text-center max-w-sm'>
          {icon}
-         <h3 className='text-2xl font-bold'>{title}</h3>
+         <h3 className='text-2xl font-medium'>{title}</h3>
          <p className='text-lg max-w-xs'>{description}</p>
       </div>
    );

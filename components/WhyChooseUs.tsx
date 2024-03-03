@@ -5,25 +5,25 @@ import { ScrollText, Wallet, HeartPulse, ShieldCheck } from 'lucide-react';
 export default function WhyChooseUs() {
    return (
       <div className='flex items-center justify-center py-[100px] bg-stone-950'>
-         <div className='flex items-center justify-center gap-14'>
+         <div className='flex flex-col md:flex-row items-center justify-center gap-14'>
             <WhyChooseUsCard
                title='Juru Masak Berpengalaman'
-               icon={<ShieldCheck size={100} />}
+               icon={<ShieldCheck size={90} />}
                description='Lorem ipsum dolor sit amet consectetur adipisicing elit.'
             />
             <WhyChooseUsCard
                title='Banyak Pilihan Menu'
-               icon={<ScrollText size={100} />}
+               icon={<ScrollText size={90} />}
                description='Lorem ipsum dolor sit amet consectetur adipisicing elit.'
             />
             <WhyChooseUsCard
                title='Harga Bersaing'
-               icon={<Wallet size={100} />}
+               icon={<Wallet size={90} />}
                description='Lorem ipsum dolor sit amet consectetur adipisicing elit.'
             />
             <WhyChooseUsCard
                title='Sehat & Higienis'
-               icon={<HeartPulse size={100} />}
+               icon={<HeartPulse size={90} />}
                description='Lorem ipsum dolor sit amet consectetur adipisicing elit.'
             />
          </div>

@@ -4,7 +4,7 @@ import ServiceCard from './ServiceCard';
 export default function Services() {
    return (
       <div className='flex items-center justify-center'>
-         <div className='grid grid-cols-4 gap-20'>
+         <div className='grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-20'>
             <ServiceCard
                title='Paket Prasmanan'
                image='/images/paket-prasmanan.jpg'
