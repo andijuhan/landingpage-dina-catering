@@ -5,7 +5,7 @@ export default function AboutUs() {
    return (
       <div className='relative flex mx-auto gap-10 items-center justify-between md:bg-stone-100'>
          <div className='md:w-[50%] flex flex-col items-end md:justify-end'>
-            <div className='flex flex-col gap-4 px-5 text-lg md:text-xl tracking-wider text-center md:text-right max-w-[700px] leading-loose text-white md:text-stone-900'>
+            <div className='flex flex-col gap-4 px-5 md:py-10 lg:py-0 text-lg md:text-xl tracking-wider text-center md:text-right max-w-[700px] leading-loose text-white md:text-stone-900'>
                <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas
                   quisquam, corrupti tempora sint consectetur accusamus

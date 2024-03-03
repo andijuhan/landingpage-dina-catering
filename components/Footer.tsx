@@ -4,7 +4,7 @@ export default function Footer() {
          <div className='pt-10 mx-auto text-lg text-center bg-black'>
             <div className='items-center justify-center'>
                <div>
-                  <h3 className='text-3xl text-white font-bold'>
+                  <h3 className='text-xl lg:text-3xl text-white font-bold mb-5'>
                      DinaCatering
                   </h3>
                   <p>Jl. Pemuda No. 1, Kuningan Jawa Barat</p>
