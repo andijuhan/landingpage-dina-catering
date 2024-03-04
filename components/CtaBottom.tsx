@@ -24,7 +24,7 @@ export default function CtaBottom() {
                   viewport={{
                      once: true,
                   }}
-                  className='text-2xl md:text-4xl lg:text-5xl font-bold text-stone-100 md:leading-snug lg:leading-snug drop-shadow-3xl'
+                  className='text-2xl md:text-4xl lg:text-5xl font-bold text-stone-50 md:leading-snug lg:leading-snug drop-shadow-3xl'
                >
                   Buat Acara Anda Lebih Berkesan dengan Menu Khusus dari
                   Catering Kami
