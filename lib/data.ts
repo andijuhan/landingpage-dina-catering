@@ -110,5 +110,13 @@ export const selectionMenu = {
          title: 'Kue Pie',
          imgUrl: '/images/kue-pie.jpg',
       },
+      {
+         title: 'Piscok',
+         imgUrl: '/images/piscok.jpg',
+      },
+      {
+         title: 'Kue Bolu',
+         imgUrl: '/images/kue-bolu.jpeg',
+      },
    ],
 };

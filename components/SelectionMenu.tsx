@@ -29,7 +29,7 @@ export default function SelectionMenu() {
                   </Tab>
                ))}
             </Tab.List>
-            <Tab.Panels className='mt-1 min-w-5xl text-stone-900 px-4 lg:px-0'>
+            <Tab.Panels className='mt-2 min-w-5xl text-stone-900 px-4 lg:px-0'>
                {Object.values(selectionMenu).map((items: any[], index) => (
                   <Tab.Panel
                      key={index}
