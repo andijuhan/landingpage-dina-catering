@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
    return (
-      <nav className='bg-stone-950 fixed left-0 top-0 z-50 w-full text-white px-5 lg:px-0 py-[20px] shadow-xl opacity-90 backdrop-blur-lg'>
+      <nav className='bg-stone-950 fixed left-0 top-0 z-50 w-full text-white px-5 lg:px-0 py-[20px] shadow-xl bg-opacity-90 backdrop-blur-lg'>
          <div className='flex items-center justify-between max-w-7xl mx-auto'>
             <div className='text-xl md:text-2xl font-bold'>DinaCatering</div>
             <div className='flex gap-10 items-center justify-center'>
@@ -17,7 +17,7 @@ export default function Navbar() {
                      </li>
                   ))}
                </ul>
-               <button className='items-center text-sm rounded-full px-6 py-2 bg-white hover:bg-yellow-400 transition-all duration-300 text-black backdrop-blur-none'>
+               <button className='items-center text-sm rounded-full px-6 py-2 bg-white hover:bg-yellow-400 transition-all duration-300 text-black'>
                   Hubungi Kami
                </button>
             </div>
