@@ -40,7 +40,7 @@ export default function Navbar() {
                <Link href='/'>DinaCatering</Link>
             </div>
             <div className='flex gap-10 items-center justify-center'>
-               <ul className='hidden md:flex gap-6'>
+               <ul className='hidden lg:flex gap-6'>
                   {menus.map((menu, index) => (
                      <li
                         key={index}
