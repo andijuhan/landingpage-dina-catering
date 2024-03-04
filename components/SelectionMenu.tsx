@@ -34,8 +34,8 @@ export default function SelectionMenu() {
                   <Tab.Panel
                      key={index}
                      className={classNames(
-                        'bg-stone-50 rounded-xl px-5 py-7',
-                        'ring-stone-100 ring-offset-2 ring-offset-stone-400 focus:outline-none focus:ring-2'
+                        'bg-stone-100 rounded-xl px-5 py-7',
+                        'ring-stone-100 ring-offset-2 ring-offset-stone-400 focus:outline-none ring-2'
                      )}
                   >
                      <div className='grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10'>

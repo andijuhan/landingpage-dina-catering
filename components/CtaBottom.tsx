@@ -12,7 +12,7 @@ export default function CtaBottom() {
             className='h-[400px] brightness-50 object-cover object-center'
          />
          <div className='absolute top-0 left-0 w-full h-[400px] z-20 flex items-center justify-center'>
-            <div className='max-w-7xl flex flex-col items-center justify-between gap-10 text-center px-7 lg:px-0'>
+            <div className='max-w-6xl flex flex-col items-center justify-between gap-10 text-center px-7 lg:px-0'>
                <h2 className='text-2xl md:text-4xl lg:text-5xl font-bold text-stone-100 md:leading-snug lg:leading-snug drop-shadow-3xl'>
                   Buat Acara Anda Lebih Berkesan dengan Menu Khusus dari
                   Catering Kami

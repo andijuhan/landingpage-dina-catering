@@ -76,6 +76,22 @@ export const selectionMenu = {
          title: 'Sambal Goreng Kentang',
          imgUrl: '/images/sambal-goreng-kentang.jpg',
       },
+      {
+         title: 'Sayur Empal',
+         imgUrl: '/images/sayur-empal.png',
+      },
+      {
+         title: 'Sate Ayam',
+         imgUrl: '/images/sate-ayam.jpg',
+      },
+      {
+         title: 'Sayur Sop',
+         imgUrl: '/images/sayur-sop.png',
+      },
+      {
+         title: 'Pekedel Kentang',
+         imgUrl: '/images/pekedel-kentang.jpg',
+      },
    ],
    Snack: [
       {
