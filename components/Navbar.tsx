@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from 'react';
 
 export default function Navbar() {
    const { activeSection } = useStoreSectionActive();
-   const [scrollProgress, setScrollProgress] = useState('');
+   const [scrollProgress, setScrollProgress] = useState('0');
    const progressBarRef = useRef<any>(null);
 
    useEffect(() => {
