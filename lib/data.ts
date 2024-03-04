@@ -41,13 +41,18 @@ export const portfolio = [
 
 export const menus = [
    {
-      title: 'About us',
-      link: '#about-us',
-   },
-   {
       title: 'Layanan',
       link: '#layanan',
    },
+   {
+      title: 'Pilihan Menu',
+      link: '#pilihan-menu',
+   },
+   {
+      title: 'Tentang Kami',
+      link: '#tentang-kami',
+   },
+
    {
       title: 'Testimoni',
       link: '#testimoni',

@@ -3,12 +3,39 @@ import { testimonial } from '@/lib/data';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, A11y } from 'swiper/modules';
+import { motion } from 'framer-motion';
 import 'swiper/css';
 import 'swiper/css/bundle';
+import { useStoreSectionActive } from '@/hooks/useStoreSectionActive';
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
 
 export default function Testimonial() {
+   const { setSectionActive } = useStoreSectionActive();
+   const { ref, inView } = useInView({
+      threshold: 0.5,
+   });
+
+   useEffect(() => {
+      if (inView) {
+         setSectionActive('Testimoni');
+      }
+   }, [inView]);
+
    return (
-      <div className='flex items-center justify-center mx-auto px-5 lg:px-0 max-w-7xl'>
+      <motion.div
+         ref={ref}
+         id='testimoni'
+         initial={{ opacity: 0 }}
+         animate={{ opacity: 0 }}
+         transition={{ duration: 1, delay: 0.5 }}
+         whileInView={{ opacity: 1 }}
+         exit={{ opacity: 0 }}
+         viewport={{
+            once: true,
+         }}
+         className='flex items-center scroll-mt-[250px] justify-center mx-auto px-5 lg:px-0 max-w-7xl'
+      >
          <Swiper
             modules={[Navigation, Autoplay, A11y]}
             navigation
@@ -44,6 +71,6 @@ export default function Testimonial() {
                </SwiperSlide>
             ))}
          </Swiper>
-      </div>
+      </motion.div>
    );
 }

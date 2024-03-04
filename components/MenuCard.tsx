@@ -1,13 +1,23 @@
+'use client';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 interface MenuCardProps {
    title: string;
    imgUrl: string;
+   delay: number;
 }
 
-export default function MenuCard({ title, imgUrl }: MenuCardProps) {
+export default function MenuCard({ title, imgUrl, delay }: MenuCardProps) {
    return (
-      <div className='flex flex-col items-center justify-start gap-4'>
+      <motion.div
+         initial={{ opacity: 0 }}
+         animate={{ opacity: 0 }}
+         transition={{ duration: 0.5, delay }}
+         whileInView={{ opacity: 1 }}
+         exit={{ opacity: 0 }}
+         className='flex flex-col items-center justify-start gap-4'
+      >
          <div className='w-[120px] h-[120px] lg:w-[200px] lg:h-[200px] overflow-hidden rounded-full'>
             <Image
                src={imgUrl}
@@ -19,6 +29,6 @@ export default function MenuCard({ title, imgUrl }: MenuCardProps) {
          </div>
 
          <h3 className='font-semibold text-lg text-center'>{title}</h3>
-      </div>
+      </motion.div>
    );
 }

@@ -2,14 +2,41 @@
 import { selectionMenu } from '@/lib/data';
 import { Tab } from '@headlessui/react';
 import MenuCard from './MenuCard';
+import { motion } from 'framer-motion';
+import { useStoreSectionActive } from '@/hooks/useStoreSectionActive';
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
 
 function classNames(...classes: string[]) {
    return classes.filter(Boolean).join(' ');
 }
 
 export default function SelectionMenu() {
+   const { setSectionActive } = useStoreSectionActive();
+   const { ref, inView } = useInView({
+      threshold: 0.5,
+   });
+
+   useEffect(() => {
+      if (inView) {
+         setSectionActive('Pilihan Menu');
+      }
+   }, [inView]);
+
    return (
-      <div className='flex flex-col items-center justify-center'>
+      <motion.div
+         ref={ref}
+         id='pilihan-menu'
+         initial={{ opacity: 0 }}
+         animate={{ opacity: 0 }}
+         transition={{ duration: 1, delay: 0.5 }}
+         whileInView={{ opacity: 1 }}
+         exit={{ opacity: 0 }}
+         viewport={{
+            once: true,
+         }}
+         className='flex flex-col items-center justify-center scroll-mt-[250px]'
+      >
          <Tab.Group>
             <Tab.List className='flex space-x-1 rounded-xl bg-stone-700 p-1'>
                {Object.keys(selectionMenu).map((item, index) => (
@@ -44,6 +71,7 @@ export default function SelectionMenu() {
                               key={index}
                               title={menu.title}
                               imgUrl={menu.imgUrl}
+                              delay={0.2 * index}
                            />
                         ))}
                      </div>
@@ -51,6 +79,6 @@ export default function SelectionMenu() {
                ))}
             </Tab.Panels>
          </Tab.Group>
-      </div>
+      </motion.div>
    );
 }
