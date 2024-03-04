@@ -57,3 +57,42 @@ export const menus = [
       link: '#portfolio',
    },
 ];
+
+export const selectionMenu = {
+   Masakan: [
+      {
+         title: 'Rendang',
+         imgUrl: '/images/rendang.png',
+      },
+      {
+         title: 'Ayam Goreng',
+         imgUrl: '/images/ayam-goreng.jpg',
+      },
+      {
+         title: 'Ayam Bakar',
+         imgUrl: '/images/ayam-bakar.png',
+      },
+      {
+         title: 'Sambal Goreng Kentang',
+         imgUrl: '/images/sambal-goreng-kentang.jpg',
+      },
+   ],
+   Snack: [
+      {
+         title: 'Risol',
+         imgUrl: '/images/risol.jpeg',
+      },
+      {
+         title: 'Kue Lumpur',
+         imgUrl: '/images/kue-lumpur.jpg',
+      },
+      {
+         title: 'Buah-buahan',
+         imgUrl: '/images/jeruk.jpeg',
+      },
+      {
+         title: 'Kue Pie',
+         imgUrl: '/images/kue-pie.jpg',
+      },
+   ],
+};

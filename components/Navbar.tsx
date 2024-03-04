@@ -17,7 +17,7 @@ export default function Navbar() {
                      </li>
                   ))}
                </ul>
-               <button className='items-center text-sm rounded-full px-6 py-2 bg-white hover:bg-yellow-400 transition-all duration-300 text-black'>
+               <button className='items-center text-sm rounded-full px-6 py-2 bg-white hover:bg-yellow-400 transition-all duration-300 text-black backdrop-blur-none'>
                   Hubungi Kami
                </button>
             </div>

@@ -19,7 +19,7 @@ export default function Services() {
                isBestSeller={true}
             />
             <ServiceCard
-               title='Paket Snack'
+               title='Paket Snack Box'
                image='/images/paket-snack-box.jpg'
                description='Paket Prasmanan untuk acara Kantor, Seminar, Workshop, Syukuran, dll'
                url='https://wa.me/#'
