@@ -31,7 +31,7 @@ export default function ServiceCard({
          className='relative bg-gray-50 rounded-xl hover:bg-white text-stone-950 group hover:shadow-lg p-5 2xl:p-10 flex flex-col items-center justify-center gap-5 ring-4 ring-stone-400 max-w-[250px] 2xl:max-w-xs text-center transition-all duration-300'
       >
          {isBestSeller && (
-            <div className='absolute flex items-center justify-center gap-2 -top-2 -right-5 z-20 bg-green-600 rounded-xl px-3 py-1 text-white font-medium animate-bounce'>
+            <div className='absolute flex items-center justify-center gap-2 -top-2 -right-5 z-20 bg-green-600 rounded-xl px-2 py-1 text-white font-medium animate-bounce'>
                <p>Best Seller</p>
                <ThumbsUp size={20} className='mb-2' />
             </div>
