@@ -34,7 +34,7 @@ export default function Testimonial() {
          viewport={{
             once: true,
          }}
-         className='flex items-center scroll-mt-[250px] justify-center mx-auto px-5 lg:px-0 max-w-7xl'
+         className='flex items-center scroll-mt-[250px] justify-center mx-auto px-5 xl:px-10 2xl:px-0 max-w-7xl'
       >
          <Swiper
             modules={[Navigation, Autoplay, A11y]}

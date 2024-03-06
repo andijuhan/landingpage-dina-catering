@@ -35,7 +35,7 @@ export default function Navbar() {
 
    return (
       <nav className='bg-stone-950 fixed left-0 top-0 z-50 w-full text-white pt-[20px] shadow-xl bg-opacity-90 backdrop-blur-lg'>
-         <div className='flex items-center justify-between max-w-7xl mx-auto px-5 lg:px-0'>
+         <div className='flex items-center justify-between max-w-7xl mx-auto px-5 2xl:px-0'>
             <div className='text-xl md:text-2xl font-bold'>
                <Link href='/'>DinaCatering</Link>
             </div>

@@ -34,7 +34,7 @@ export default function Portfolio() {
          viewport={{
             once: true,
          }}
-         className='flex items-center justify-center mx-auto px-5 lg:px-0 max-w-7xl scroll-mt-[250px]'
+         className='flex items-center justify-center mx-auto px-5 lg:px-10 2xl:lg:px-0 max-w-7xl scroll-mt-[250px]'
       >
          <Swiper
             modules={[Navigation, Autoplay, A11y]}

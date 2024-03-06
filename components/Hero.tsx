@@ -1,11 +1,27 @@
 'use client';
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useStoreSectionActive } from '@/hooks/useStoreSectionActive';
+import { useInView } from 'react-intersection-observer';
 
 export default function Hero() {
+   const { setSectionActive } = useStoreSectionActive();
+   const { ref, inView } = useInView({
+      threshold: 0.5,
+   });
+
+   useEffect(() => {
+      if (inView) {
+         setSectionActive('Hero');
+      }
+   }, [inView]);
+
    return (
-      <div className='relative w-full h-[400px] md:h-[600px] overflow-hidden mt-[60px] md:mt-[70px]'>
+      <div
+         ref={ref}
+         className='relative w-full h-[400px] md:h-[600px] overflow-hidden mt-[60px] md:mt-[70px]'
+      >
          <div className='absolute top-0 right-0 z-20 bg-gradient-to-b from-stone-950 w-full h-[100px] md:h-[300px]' />
          <motion.div
             initial={{ opacity: 0 }}

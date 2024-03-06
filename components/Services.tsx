@@ -22,7 +22,7 @@ export default function Services() {
          id='layanan'
          ref={ref}
       >
-         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-20'>
+         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 2xl:gap-20'>
             <ServiceCard
                title='Paket Nasi Box'
                image='/images/paket-nasi-box.jpg'

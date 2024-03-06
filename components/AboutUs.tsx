@@ -33,7 +33,7 @@ export default function AboutUs() {
                viewport={{
                   once: true,
                }}
-               className='flex flex-col gap-4 px-5 md:py-10 lg:py-0 text-lg md:text-xl tracking-wider text-center md:text-right max-w-[700px] leading-tight lg:leading-loose text-white md:text-stone-900'
+               className='flex flex-col gap-4 px-5 md:py-10 2xl:py-0 text-lg md:text-xl tracking-wider text-center md:text-right max-w-[700px] leading-tight 2xl:leading-loose text-white md:text-stone-900'
             >
                <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas

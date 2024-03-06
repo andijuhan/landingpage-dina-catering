@@ -3,7 +3,7 @@ import { ScrollText, Wallet, HeartPulse, ShieldCheck } from 'lucide-react';
 
 export default function WhyChooseUs() {
    return (
-      <div className='flex items-center justify-center py-[100px] bg-stone-950'>
+      <div className='flex items-center justify-center px-10 py-[100px] bg-stone-950'>
          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14'>
             <WhyChooseUsCard
                title='Juru Masak Berpengalaman'

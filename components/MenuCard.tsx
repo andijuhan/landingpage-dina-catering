@@ -18,7 +18,7 @@ export default function MenuCard({ title, imgUrl, delay }: MenuCardProps) {
          exit={{ opacity: 0 }}
          className='flex flex-col items-center justify-start gap-4'
       >
-         <div className='w-[120px] h-[120px] lg:w-[200px] lg:h-[200px] overflow-hidden rounded-full'>
+         <div className='w-[120px] h-[120px] 2xl:w-[200px] 2xl:h-[200px] overflow-hidden rounded-full'>
             <Image
                src={imgUrl}
                width={200}

@@ -65,7 +65,7 @@ export default function SelectionMenu() {
                         'ring-stone-100 ring-offset-2 ring-offset-stone-400 focus:outline-none ring-2'
                      )}
                   >
-                     <div className='grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10'>
+                     <div className='grid grid-cols-2 lg:grid-cols-4 gap-5 2xl:gap-10'>
                         {items.map((menu: any, index) => (
                            <MenuCard
                               key={index}
