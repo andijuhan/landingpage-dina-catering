@@ -47,7 +47,7 @@ export default function Hero() {
                <span className='bg-yellow-400 shadow-lg p-1 text-black'>
                   hidangan lezat
                </span>{' '}
-               dari catering kami
+               dari catering kami!
             </motion.h2>
          </div>
       </div>
